@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "labels": [
+    "renovate 🧹",
+    "dependency ⚙️"
+  ],
+  "commitMessagePrefix": "[RENOVATE]",
+  "pinDigests": true,
+  "separateMultipleMajor": false
+}
