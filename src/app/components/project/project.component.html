@@ -6,4 +6,10 @@
   <mat-card-content>
     <p>{{project.description}}</p>
   </mat-card-content>
+  <mat-card-actions class="buttons">
+    <button *ngIf="project.demoUrl" mat-stroked-button color="primary" class="button"
+      (click)="openLink(project.demoUrl)">Demo</button>
+    <button *ngIf="project.gitUrl" mat-stroked-button color="primary" class="button"
+      (click)="openLink(project.gitUrl)">GitHub</button>
+  </mat-card-actions>
 </mat-card>

@@ -9,13 +9,19 @@ import { Project } from 'src/app/model/project';
 export class ProjectComponent implements OnInit {
   projects: Project[] = [{
     title: 'Darkbox Gallery',
-    imageUrl: '',
+    imageUrl: 'assets/darkbox-icon.svg',
     imageAltText: 'Darkbox gallery logo',
-    description: 'Darkbox Gallery is a highly configurable lightbox themed gallery library for Angular applications using the ivy engine (Angular 9+). '
+    description: 'Darkbox Gallery is a highly configurable lightbox themed gallery library for Angular applications using the ivy engine (Angular 9+). ',
+    demoUrl: 'https://darkbox.failedsuccessfully.de/',
+    gitUrl: 'https://github.com/failed-successfully/ngx-darkbox-gallery-library'
   }];
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  openLink(url: string): void {
+    window.open(url, '_blank');
   }
 }

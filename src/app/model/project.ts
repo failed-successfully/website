@@ -3,4 +3,6 @@ export interface Project {
   imageUrl: string;
   imageAltText?: string;
   description: string;
+  gitUrl?: string;
+  demoUrl?: string;
 }
