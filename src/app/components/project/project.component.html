@@ -1,0 +1,9 @@
+<mat-card class="card" *ngFor="let project of projects">
+  <mat-card-header>
+    <mat-card-title>{{project.title}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{project.imageUrl}}" alt="{{project.imageAltText}}">
+  <mat-card-content>
+    <p>{{project.description}}</p>
+  </mat-card-content>
+</mat-card>
