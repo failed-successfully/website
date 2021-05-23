@@ -2,7 +2,8 @@ name: Publish github pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build:
