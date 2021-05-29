@@ -24,7 +24,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: failed-successfully
-          path: dist/
+          path: dist/website
 
   publish-gh-pages:
     needs: build
