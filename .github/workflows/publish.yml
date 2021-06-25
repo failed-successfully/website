@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci --ignore-scripts
+      - run: mkdir -p dist/website
       - run: npm run build
       - run: cp LICENSE dist/
       #- run: npm test --if-present
