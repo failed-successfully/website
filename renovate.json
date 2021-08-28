@@ -8,5 +8,8 @@
   ],
   "commitMessagePrefix": "[RENOVATE]",
   "pinDigests": true,
-  "separateMultipleMajor": false
+  "separateMultipleMajor": false,
+  "schedule": [
+    "every weekend"
+  ]
 }
