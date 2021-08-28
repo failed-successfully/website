@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@25316bbc1f10ac9d8798711f44914b1cf3c4e954 # renovate: tag=v2
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci --ignore-scripts
+      - run: npm ci --no-optional
       - run: mkdir -p dist/website
       - run: npm run build
       - run: cp LICENSE dist/
