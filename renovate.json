@@ -1,6 +1,7 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":disableDependencyDashboard"
   ],
   "labels": [
     "renovate 🧹",
@@ -9,6 +10,13 @@
   "commitMessagePrefix": "[RENOVATE]",
   "pinDigests": true,
   "separateMultipleMajor": false,
+  "reviewersFromCodeOwners": true,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
   "schedule": [
     "every weekend"
   ]
