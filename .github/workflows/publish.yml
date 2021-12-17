@@ -22,7 +22,7 @@ jobs:
       - run: npm run build
       - run: cp LICENSE dist/
       #- run: npm test --if-present
-      - uses: actions/upload-artifact@27121b0bdffd731efa15d66772be8dc71245d074 # renovate: tag=v2
+      - uses: actions/upload-artifact@82c141cc518b40d92cc801eee768e7aafc9c2fa2 # renovate: tag=v2
         with:
           name: failed-successfully
           path: dist/website
