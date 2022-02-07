@@ -10,7 +10,7 @@
   "commitMessagePrefix": "[RENOVATE]",
   "pinDigests": true,
   "separateMultipleMajor": false,
-  "reviewersFromCodeOwners": true,
+  "ignoreTests": true
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
