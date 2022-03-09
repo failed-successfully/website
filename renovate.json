@@ -16,6 +16,10 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
       "platformAutomerge": true
+    },
+    {
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<4.6.0"
     }
   ]
 }
